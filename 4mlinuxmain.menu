@@ -1,0 +1,16 @@
+LABEL 4MLINUX32
+MENU LABEL ^4MLinux 27.0 All-In-One Edition 32bits
+KERNEL er/plugins/4mlinux/x86/bzimage
+INITRD er/plugins/4mlinux/x86/initrd.gz
+APPEND rw root=/dev/ram
+TEXT HELP
+                 4MLinux All-In-One Edition 32bits.
+ENDTEXT
+LABEL 4MSERVER64
+MENU LABEL ^4MServer 27.0 Edition 64bits
+KERNEL er/plugins/4mlinux/x64/bzimage
+INITRD er/plugins/4mlinux/x64/initrd.gz
+APPEND rw root=/dev/ram
+TEXT HELP
+                 4MLinux Server Edition 64bits.
+ENDTEXT

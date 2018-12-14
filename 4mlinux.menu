@@ -1,7 +1,9 @@
-LABEL 4MLINUX
-MENU LABEL ^4MLinux 3.2 All-In-One Edition
-KERNEL er/plugins/4mlinux/bzimage
-APPEND rw root=/dev/ram initrd=/er/plugins/4mlinux/initrd.gz
-TEXT HELP
-                 4MLinux All-In-One Edition.
-ENDTEXT
+MENU BEGIN 4MLINUX
+MENU TITLE 4MLINUX 27.0
+MENU LABEL ^4MLinux 27.0
+
+MENU INCLUDE er/plugins/4mlinux/4mlinuxmain.menu
+
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END
